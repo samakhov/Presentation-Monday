@@ -168,7 +168,7 @@
 <ul>
 <li>Better html rendering</li>
 <li>Automatic deploy and hosting</li>
-<li>Slide generated With Pillar</li>
+<li>Slide generated With deckJS template from Pillar</li>
 </ul>
 
 </div>
@@ -201,13 +201,19 @@
 <h2>Toc module</h2>
 
 <div class="columns" style="margin:0px auto; width:100%">
-<div class="column" style="float:left; margin:0; width:100%;">
+<div class="column" style="float:left; margin:0; width:50%;">
 <ul>
-<li>Use visitors</li>
-<li>Menu panel</li>
-<li>Naviguate in the document using the menu</li>
+<li>We have used the visitor design pattern to visit titles and input annotations.</li>
+<li>We have also a Stack structure to get the hierarchy between those titles</li>
+<li>Tests to cover the visitor, we also have tests for the model. As we redefine equals and hash</li>
+<li>To integrate the toc in the mustache template we have redefine some methods, asDictionary</li>
 </ul>
 
+</div>
+<div class="column" style="float:left; margin:0; width:50%;">
+<p>
+<img src="toctests.png" alt=""/>
+</p>
 </div>
 </div>
 
@@ -220,12 +226,17 @@
 <h2>Automatic deploy</h2>
 
 <div class="columns" style="margin:0px auto; width:100%">
-<div class="column" style="float:left; margin:0; width:100%;">
+<div class="column" style="float:left; margin:0; width:50%;">
 <ul>
-<li>Github Pages for serving html files</li>
-<li>Travis ci scripts for generating files</li>
+<li>Github Pages automatically recognize gh-pages as a branch for hosting static files</li>
+<li>We have defined a travis ci deploy script with Github pages as a provider.</li>
 </ul>
 
+</div>
+<div class="column" style="float:left; margin:0; width:50%;">
+<p>
+<img src="travis.png" alt=""/>
+</p>
 </div>
 </div>
 </div>

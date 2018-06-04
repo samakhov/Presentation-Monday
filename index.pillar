@@ -103,7 +103,7 @@ ${column:100}$
 
 - Better html rendering
 - Automatic deploy and hosting
-- Slide generated With Pillar
+- Slide generated With deckJS template from Pillar
 
 ${endColumns}$
 
@@ -130,11 +130,16 @@ ${slide:Toc module}$
 
 ${columns}$
 
-${column:100}$
+${column:50}$
 
-- Use visitors
-- Menu panel
-- Naviguate in the document using the menu
+- We have used the visitor design pattern to visit titles and input annotations.
+- We have also a Stack structure to get the hierarchy between those titles
+- Tests to cover the visitor, we also have tests for the model. As we redefine equals and hash
+- To integrate the toc in the mustache template we have redefine some methods, asDictionary
+
+${column:50}$
+
++file://toctests.png+
 
 ${endColumns}$
 
@@ -146,9 +151,13 @@ ${slide:Automatic deploy}$
 
 ${columns}$
 
-${column:100}$
+${column:50}$
 
-- Github Pages for serving html files
-- Travis ci scripts for generating files
+- Github Pages automatically recognize gh-pages as a branch for hosting static files
+- We have defined a travis ci deploy script with Github pages as a provider.
+
+${column:50}$
+
++file://travis.png+
 
 ${endColumns}$
