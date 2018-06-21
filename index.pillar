@@ -1,11 +1,11 @@
 
-${slide:Context}$
+${slide:title=Context}$
 
 ${columns}$
 
 !!! Pillar
 
-${column:100}$
+${column:width=100}$
 
 - Markup Syntax
 - Associated Tools
@@ -20,11 +20,11 @@ ${endColumns}$
 
 
 
-${slide:What was going wrong ??}$
+${slide:title=What was going wrong ??}$
 
 ${columns}$
 
-${column:50}$
+${column:width=50}$
 
 - Html templates were not in good states : 
 - No table of contents
@@ -35,7 +35,7 @@ ${column:50}$
 - Errors are sometimes cryptic
 - Warnings are almost not existant
 
-${column:50}$
+${column:width=50}$
 
 +file://old_book.png+
 
@@ -46,17 +46,17 @@ ${endColumns}$
 
 
 
-${slide:Work in Progress}$
+${slide:title=Work in Progress}$
 
 ${columns}$
 
-${column:50}$
+${column:width=50}$
 
 - New archetype for html rendering
 - A new Pillar module: Toc module extracting a table of Contents
 - Automatic deploy of html pages using Github and Travis
 
-${column:50}$
+${column:width=50}$
 
 +file://test1.png+
 
@@ -65,11 +65,11 @@ ${endColumns}$
 
 
 
-${slide:Demo}$
+${slide:title=Demo}$
 
 ${columns}$
 
-${column:100}$
+${column:width=100}$
 
 - Old ones
 - New ones
@@ -78,11 +78,11 @@ ${endColumns}$
 
 
 
-${slide:Next Steps}$
+${slide:title=Next Steps}$
 
 ${columns}$
 
-${column:100}$
+${column:width=100}$
 
 - Archetype for personal web sites : Academic
 - Blogging plugin for web sites
@@ -95,11 +95,11 @@ ${endColumns}$
 
 
 
-${slide:Pillar}$
+${slide:title=Pillar}$
 
 ${columns}$
 
-${column:100}$
+${column:width=100}$
 
 - Better html rendering
 - Automatic deploy and hosting
@@ -110,11 +110,11 @@ ${endColumns}$
 
 
 
-${slide:New Archetype}$
+${slide:title=New Archetype}$
 
 ${columns}$
 
-${column:100}$
+${column:width=100}$
 
 - Use for generating documents in html
 - Menu panel
@@ -126,18 +126,18 @@ ${endColumns}$
 
 
 
-${slide:Toc module}$
+${slide:title=Toc module}$
 
 ${columns}$
 
-${column:50}$
+${column:width=50}$
 
 - We have used the visitor design pattern to visit titles and input annotations.
 - We have also a Stack structure to get the hierarchy between those titles
 - Tests to cover the visitor, we also have tests for the model. As we redefine equals and hash
 - To integrate the toc in the mustache template we have redefine some methods, asDictionary
 
-${column:50}$
+${column:width=50}$
 
 +file://toctests.png+
 
@@ -147,16 +147,16 @@ ${endColumns}$
 
 
 
-${slide:Automatic deploy}$
+${slide:title=Automatic deploy}$
 
 ${columns}$
 
-${column:50}$
+${column:width=50}$
 
 - Github Pages automatically recognize gh-pages as a branch for hosting static files
 - We have defined a travis ci deploy script with Github pages as a provider.
 
-${column:50}$
+${column:width=50}$
 
 +file://travis.png+
 
