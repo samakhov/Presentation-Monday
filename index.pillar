@@ -31,9 +31,6 @@ ${column:width=50}$
 - Ugly css
 - No easy hosting
 - No blogging support
-- Everything was regenerated every time, not practical for big documents
-- Errors are sometimes cryptic
-- Warnings are almost not existant
 
 ${column:width=50}$
 
@@ -63,6 +60,25 @@ ${column:width=50}$
 ${endColumns}$
 
 
+${slide:title=Personal Websites}$
+
+${columns}$
+
+${column:width=50}$
+
+- An archetype for personal websites
+- Simplify pillar configuration files
+- More flexibility about generation process
+- Blog integration
+- Disqus integration
+
+${column:width=50}$
+
++file://test1.png+
+
+${endColumns}$
+
+
 
 
 ${slide:title=Demo}$
@@ -71,26 +87,8 @@ ${columns}$
 
 ${column:width=100}$
 
-- Old ones
-- New ones
 
 ${endColumns}$
-
-
-
-${slide:title=Next Steps}$
-
-${columns}$
-
-${column:width=100}$
-
-- Archetype for personal web sites : Academic
-- Blogging plugin for web sites
-- Another way of compiling Pillar : Mike
-- Improve warnings system
-
-${endColumns}$
-
 
 
 
@@ -109,23 +107,6 @@ ${endColumns}$
 
 
 
-
-${slide:title=New Archetype}$
-
-${columns}$
-
-${column:width=100}$
-
-- Use for generating documents in html
-- Menu panel
-- Naviguate in the document using the menu
-
-${endColumns}$
-
-
-
-
-
 ${slide:title=Toc module}$
 
 ${columns}$
@@ -133,7 +114,7 @@ ${columns}$
 ${column:width=50}$
 
 - We have used the visitor design pattern to visit titles and input annotations.
-- We have also a Stack structure to get the hierarchy between those titles
+- We have also a Stack structure to get the hierarchy between those titles.
 - Tests to cover the visitor, we also have tests for the model. As we redefine equals and hash
 - To integrate the toc in the mustache template we have redefine some methods, asDictionary
 
