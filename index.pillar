@@ -74,7 +74,22 @@ ${column:width=50}$
 
 ${column:width=50}$
 
-+file://test1.png+
++file://academic.png+
+
+${endColumns}$
+
+
+${slide:title=Blog}$
+
+${columns}$
+
+${column:width=50}$
+
++file://blog.png+
+
+${column:width=50}$
+
++file://disqus.png+
 
 ${endColumns}$
 
